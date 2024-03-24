@@ -3,12 +3,12 @@
 
 <head>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
 
   <style>
     :root {
-      --my-color:#FFFFFF;
-      --my-color-accent:#F6F6F6;
+      --my-color:#f1c911;
+      --my-color-accent:#eac210;
       --black: #3c3c3c;
       --black-accent: #2d2d2d;
       --blue: #809bce;
@@ -27,6 +27,9 @@
       --orange-accent:#9e4102;
       --yellow:#f1c40f;
       --yellow-accent:#bd9a0c;
+      --white:#FFFFFF;
+      --white-accent:#F6F6F6;
+	
     }
 
     button {
@@ -202,7 +205,22 @@
       box-shadow: 0 0;
       background-color: var(--orange-accent);
     }
+    .white {
+      background-color: var(--white);
+    }
 
+    .white:hover {
+      background-color: var(--white-accent);
+    }
+
+    .white.threeD {
+      box-shadow: 0px 4px 0px var(--white-accent);
+    }
+
+    .white.threeD:active {
+      box-shadow: 0 0;
+      background-color: var(--white-accent);
+    }
     .yellow {
       background-color: var(--yellow);
     }
@@ -244,7 +262,7 @@
 
 <body>
 
-  <button class="btn large my-color rounded threeD" type="button" onclick="navigate()"> <i class="fa-solid fa-grid-2" style="color: #868CFA;"></i> Power APPs </button>
+  <button class="btn large white rounded threeD" type="button" onclick="navigate()"> <i class="fi fi-sr-apps" style="color: #792774;"></i> Power APPs </button>
   
   <script>
     function navigate() {
